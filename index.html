@@ -29,6 +29,14 @@
 
             <div class="surname">Nguyễn</div>
             <div class="name">Quỳnh</div>
+            
+            <audio id="song">
+                <source src="happy-birthday-song.mp3" type="audio/mp3">
+            </audio>
+            <div id="play-audio"> 
+                 <img id="icon" src="icon-play.png" alt="">
+            </div>
+            
         </div>
 
         <div id="wrapper">
@@ -47,7 +55,21 @@
             </div>
         </div>       
     </div>
-
+    
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                icon.src = "";
+            }else{
+                song.pause();
+                icon.src = "icon-play.png";
+            }
+        }
+    </script>
+    
     <script src="script.js"></script>
 </body>
 
