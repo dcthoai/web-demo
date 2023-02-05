@@ -170,3 +170,16 @@ body{
     width: auto;
     border-radius: 10px;
 }
+
+#play-audio{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 59%;
+    left: 51%;
+}
+
+#icon{
+    width: 100%;
+    height: auto;
+}
