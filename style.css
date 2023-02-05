@@ -172,14 +172,17 @@ body{
 }
 
 #play-audio{
-    width: 70px;
-    height: auto;
+    width: 150px;
+    height: 150px;
     position: absolute;
-    top: 59%;
-    left: 51%;
+    top: 50%;
+    left: 42%;
 }
 
 #icon{
-    width: 100%;
-    height: auto;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
