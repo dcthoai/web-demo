@@ -13,30 +13,16 @@
 <body>
     <div id="container">
         <div class="snow"></div>
-
+        
         <div id="box-cake">
             <img id="cake" src="birthday-cake-5aa93.png" alt="Bánh sinh nhật">
-            <audio src="happy-birthday-song.mp3" type="audio/mp3" autoplay=""></audio>
             <h6 id="heading">Cố gắng kiếm học bổng nhá 🤪</h6>
-
-            <div class="box-fire">
-                <img class="fire" src="ngon-lua.png" alt="Ngọn lửa">
-            </div>
-
-            <div class="box-avatar">
-                <img class="avatar" src="avatar.jpg" alt="Avatar">
-            </div>
-
+            <audio id="song"><source src="happy-birthday-song.mp3" type="audio/mp3"></audio>
+            <div class="box-fire"><img class="fire" src="ngon-lua.png" alt="Ngọn lửa"></div>
+            <div class="box-avatar"><img class="avatar" src="avatar.jpg" alt="Avatar"></div>
+            <div id="play-audio"><img id="icon" src="icon-play.png" alt="Play"></div>
             <div class="surname">Nguyễn</div>
             <div class="name">Quỳnh</div>
-            
-            <audio id="song">
-                <source src="happy-birthday-song.mp3" type="audio/mp3">
-            </audio>
-            <div id="play-audio"> 
-                 <img id="icon" src="icon-play.png" alt="">
-            </div>
-            
         </div>
 
         <div id="wrapper">
@@ -49,27 +35,25 @@
             </div>
 
             <div id="button">
-                <a id="button-follow" href="https://www.facebook.com/cth.169/">
-                    <img id="image-follow" src="follow.jpg" alt="Facebook">
-                </a>
+                <a id="button-follow" href="https://www.facebook.com/cth.169/"><img id="image-follow" src="follow.jpg" alt="Facebook"></a>
             </div>
-        </div>       
+        </div>
     </div>
-    
+
     <script>
         var song = document.getElementById("song");
         var icon = document.getElementById("icon");
         icon.onclick = function(){
             if(song.paused){
                 song.play();
-                icon.src = "";
+                icon.src = "pause.png";
             }else{
                 song.pause();
-                icon.src = "icon-play.png";
+                icon.src = "play.png";
             }
         }
     </script>
-    
+
     <script src="script.js"></script>
 </body>
 
